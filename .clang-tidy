@@ -1,0 +1,40 @@
+Checks: -*,
+    clang-diagnostic-*,
+    clang-analyzer-*,
+    cppcoreguidelines-*,
+    modernize-*,
+    llvm-*,
+    google-*,
+    hicpp-*,
+    cert-*,
+    abseil-*,
+    boost-*,
+    misc-*,
+    performance-*,
+    concurrency-*,
+    portability-*,
+    readability-*,
+    bugprone-*,
+    mpi-*,
+    openmp-*,
+    -cppcoreguidelines-avoid-magic-numbers,
+    -cppcoreguidelines-prefer-member-initializer,
+    -modernize-use-trailing-return-type,
+    -modernize-return-braced-init-list,
+    -modernize-use-nodiscard,
+    -readability-identifier-length,
+    -readability-magic-numbers,
+    -bugprone-easily-swappable-parameters,
+    -cert-msc51-cpp,
+    -cert-msc32-c,
+    -misc-no-recursion,
+    -readability-else-after-return,
+    -llvm-else-after-return,
+
+CheckOptions:
+    - key: cppcoreguidelines-special-member-functions.AllowSoleDefaultDtor
+      value: True
+    - key: hicpp-special-member-functions.AllowSoleDefaultDtor
+      value: True
+    - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+      value: True

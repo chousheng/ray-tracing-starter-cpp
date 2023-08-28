@@ -1,0 +1,24 @@
+BasedOnStyle: LLVM
+
+ColumnLimit: 100
+
+AccessModifierOffset: -4
+ContinuationIndentWidth: 4
+IndentWidth: 4
+
+ConstructorInitializerIndentWidth: 4
+BreakConstructorInitializers: BeforeColon
+PackConstructorInitializers: NextLine
+
+AlignAfterOpenBracket: BlockIndent # LLVM 14
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortFunctionsOnASingleLine: Empty
+BinPackArguments: false
+BinPackParameters: false
+PenaltyReturnTypeOnItsOwnLine: 200
+
+AlignOperands: false
+BreakBeforeBinaryOperators: NonAssignment
+
+InsertNewlineAtEOF: true # LLVM 16

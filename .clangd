@@ -1,0 +1,2 @@
+CompileFlags:
+    Add: [-xc++, -std=c++17, -Wall, -Wextra] # Treat all files as C++ and enable more warnings

@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (CodeLLDB)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/ray-tracing",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build debug"
+        },
+        {
+            "name": "Debug (C/C++ Tools)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/ray-tracing",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build debug",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "Release (CodeLLDB)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/release/ray-tracing",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build release"
+        },
+        {
+            "name": "Release (C/C++ Tools)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/release/ray-tracing",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build release",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

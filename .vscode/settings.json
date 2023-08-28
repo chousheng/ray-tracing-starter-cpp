@@ -1,0 +1,12 @@
+{
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "files.associations": {
+        ".clang-format": "yaml",
+        ".clang-tidy": "yaml",
+        ".clangd": "yaml"
+    }
+}
